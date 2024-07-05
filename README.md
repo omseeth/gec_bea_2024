@@ -8,8 +8,8 @@ token(s) y<sup>i</sup>, where y<sup>i</sup> is a correction, if
 x<sup>i</sup> needs amelioration (e.g. correct spelling, additional 
 prepositions, etc.). In the seq2seq approach, the decoder should eventually 
 produce output vectors y<sup>i</sup> corresponding to the final hidden 
-state representation of vectors of x<sup>i</sup> where x<sup>i</sup> is fed 
-into the encoder. Therefore, this task can be described as a "many-to-many" 
+state representation of vectors of x<sup>i</sup> where x<sup>i</sup> was 
+previously encoded. Therefore, this task can be described as a "many-to-many" 
 sequence modeling problem 
 [(Kaparthy 2015)](https://karpathy.github.io/2015/05/21/rnn-effectiveness/).
 

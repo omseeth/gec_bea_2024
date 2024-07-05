@@ -1,14 +1,17 @@
 # Machine translation seq2seq LSTM to correct grammatical errors (GEC)
 
 The goal of the project is a seq2seq approach where the input is a source 
-sentence with grammatical errors and the output a target sentence as a 
-corrected version of the input. For each sentence, the model receives input 
-token x<sup>i</sup> and should predict output token y<sup>i</sup>, where 
-y<sup>i</sup> is a correction, if x<sup>i</sup> needs amelioration (e.g. 
-correct spelling, additional prepositions, etc.). To put it differently, the 
-decoder should generate output vectors y<sup>i</sup> corresponding to the 
-input vectors x<sup>i</sup> fed into the encoder. Therefore, this task can 
-be described as a "many-to-many" sequence modeling problem [(Kaparthy 2015)](https://karpathy.github.io/2015/05/21/rnn-effectiveness/).
+sentence (src) with grammatical errors and the output a target sentence (tgt) 
+as a corrected version of the input. For each sentence, the model receives 
+input tokens x<sup>i</sup> of the sentence at hand and should predict output 
+token(s) y<sup>i</sup>, where y<sup>i</sup> is a correction, if 
+x<sup>i</sup> needs amelioration (e.g. correct spelling, additional 
+prepositions, etc.). In the seq2seq approach, the decoder should eventually 
+generate output vectors y<sup>i</sup> corresponding to the final hidden 
+state representation of vectors of x<sup>i</sup> where x<sup>i</sup> is fed 
+into the encoder. Therefore, this task can be described as a "many-to-many" 
+sequence modeling problem 
+[(Kaparthy 2015)](https://karpathy.github.io/2015/05/21/rnn-effectiveness/).
 
 This repository contains the necessary preprocessing scripts as well as an 
 extensive Jupyter notebook for implementing a seq2seq model on Google Colab. 

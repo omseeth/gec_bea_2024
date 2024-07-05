@@ -2,15 +2,15 @@
 
 The goal of the project is a seq2seq approach where the input is a source 
 sentence (src) with grammatical errors and the output a target sentence (tgt) 
-as a corrected version of the input. For each sentence, the model receives 
+as a corrected version of the input. For each sentence S, the model receives 
 input tokens x<sup>i</sup> of the sentence at hand and should predict output 
 token(s) y<sup>i</sup>, where y<sup>i</sup> is a correction, if 
 x<sup>i</sup> needs amelioration (e.g. correct spelling, additional 
 prepositions, etc.). In the seq2seq approach, the decoder should eventually 
 produce output vectors y<sup>i</sup> corresponding to the final hidden 
-state representation of vectors of x<sup>i</sup> where x<sup>i</sup> was 
-previously encoded. Therefore, this task can be described as a "many-to-many" 
-sequence modeling problem 
+state representation of S where each x<sup>i</sup> was previously encoded. 
+Therefore, this task can be described as a "many-to-many" sequence modeling 
+problem 
 [(Kaparthy 2015)](https://karpathy.github.io/2015/05/21/rnn-effectiveness/).
 
 This repository contains the necessary preprocessing scripts as well as an 

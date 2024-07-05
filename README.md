@@ -2,7 +2,7 @@
 
 The goal of the project is a seq2seq approach where the input is a source 
 sentence (src) with grammatical errors and the output a target sentence (tgt) 
-as a corrected version of the input. For each sentence S, the model receives 
+as a corrected version of the input. For each sentence s, the model receives 
 input tokens x<sup>i</sup> of the sentence at hand and should predict output 
 token(s) y<sup>i</sup>, where y<sup>i</sup> is a correction, if 
 x<sup>i</sup> needs amelioration (e.g. correct spelling, additional 

@@ -75,14 +75,14 @@ discrepancy in loss between the training and validation sets.
 provided in this repository is `0.036604`.
 
 **Example** For a given, incorrect source sentence the model makes the 
-following prediction (where the target represents the correction):
+following prediction (where the reference represents the gold correction):
 
 > **Source**: There have been a number of cases in the last ten years of the 
 > top few boxers having tragic losses throughout their ranks .
 
 
-> **Target**: There have been a number of cases in the last ten years of the 
-> top few boxers having tragic losses **among** their ranks .
+> **Reference**: There have been a number of cases in the last ten years of 
+> the top few boxers having tragic losses **among** their ranks .
 
 
 > **Prediction**: there have been a number of changes in the last ten years in 
